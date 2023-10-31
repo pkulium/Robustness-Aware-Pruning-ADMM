@@ -15,7 +15,7 @@ class Config:
             raise Exception("unkown stage.valid choices are {}".format(str(stage_choices)))
         try:
             with open(config_dir, "r") as stream:
-                raw_dict = yaml.load(stream)
+                raw_dict = yaml.safe_load(stream)
 
                 # adv parameters
                 self.epsilon = raw_dict['adv']['epsilon']
