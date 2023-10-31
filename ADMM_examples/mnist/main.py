@@ -211,8 +211,8 @@ def main():
     if config.load_model:
         # unlike resume, load model does not care optimizer status or start_epoch
         print('==> Loading from {}'.format(config.load_model))
-        config.model.load_state_dict(torch.load(config.load_model,map_location = {'cuda:0':'cuda:{}'.format(config.gpu)}))
-        test(config,  device, test_loader) 
+        # config.model.load_state_dict(torch.load(config.load_model,map_location = {'cuda:0':'cuda:{}'.format(config.gpu)}))
+        # test(config,  device, test_loader) 
 
     global best_acc
     if config.resume:
