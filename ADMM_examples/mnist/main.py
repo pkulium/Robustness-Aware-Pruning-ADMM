@@ -169,7 +169,7 @@ def main():
     elif config.arch == 'lenet_adv':
         model = LeNet_adv(config.width_multiplier).to(device)
     else:
-        model = Linear().to(device)
+        model = nn.Linear(in_features = 784, out_features = 10).to(device)
     torch.cuda.set_device(config.gpu)
     model.cuda(config.gpu)
     
