@@ -54,7 +54,7 @@ general:
  gpu_id:  
   0
  arch: 
-  lenet_adv
+  linear
  workers: 
   16
  logging: 
