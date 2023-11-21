@@ -32,6 +32,8 @@
 adv:
  epsilon:
   0.3
+random_seed:
+ 21
  num_steps:
   40
  step_size:
